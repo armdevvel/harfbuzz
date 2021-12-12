@@ -8,6 +8,7 @@ Description: HarfBuzz text shaping library ICU integration
 Version: %VERSION%
 
 Requires: harfbuzz
-Requires.private: icu-uc
+Requires.private: icu-uc cairo-ft glib-2.0
 Libs: -L${libdir} -lharfbuzz-icu
+Libs.private: -lusp10 -lgdi32
 Cflags: -I${includedir}/harfbuzz
